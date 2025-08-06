@@ -1,6 +1,6 @@
 name: Events Demo 1
 # on: [push, workflow_dispatch] # this mens multiple events occurence can start this workflow
-on: ...
+on: workflow_dispatch
 jobs:
   deploy:
     runs-on: ubuntu-latest
