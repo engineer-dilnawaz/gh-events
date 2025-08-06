@@ -1,4 +1,4 @@
-name: Events Demo 1
+name: Pull Request Opened & Edited Events
 on:
   pull_request:
     # types: opened  => 1st way
