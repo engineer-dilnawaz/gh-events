@@ -1,6 +1,12 @@
 name: Events Demo 1
-# on: [push, workflow_dispatch] # this mens multiple events occurence can start this workflow
-on: ...
+on:
+  pull_request:
+    # types: opened  => 1st way
+    # types: [opened, edited] => 2nd way
+    types:
+      - opened # => 3rd way
+      - edited
+  workflow_dispatch: # in here :(colon is necessary and indentation too lined with pull_request above)
 jobs:
   deploy:
     runs-on: ubuntu-latest
